@@ -1,6 +1,18 @@
-import React from "react";
-import "./App.css";
+import React, { useState } from "react";
+import "./App.scss";
 
 export const App = () => {
-  return <div>React Project</div>;
+  const [title, setTitle] = useState<String>("React Project");
+  return (
+    <div>
+      {title}
+      <button
+        onClick={() => {
+          setTitle((prevState) => prevState + " + Webpack");
+        }}
+      >
+        Start
+      </button>
+    </div>
+  );
 };
