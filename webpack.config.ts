@@ -11,7 +11,7 @@ interface EnvVariables {
 export default (env: EnvVariables) => {
   const config: webpack.Configuration = {
     mode: env.mode ?? "development",
-    entry: path.resolve(__dirname, "src", "index.ts"), //по default назва бандла main.js
+    entry: path.resolve(__dirname, "src", "index.tsx"), //по default назва бандла main.js
     //   entry: {
     //     точка входа, прописан шлях до файлу, який є головним
     //     bundle: path.resolve(__dirname, "src", "index.js"),

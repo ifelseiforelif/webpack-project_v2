@@ -1,1 +1,0 @@
-(()=>{"use strict";function o(o,e){return o+e}console.log("Hello Webpack and Typescript!"),console.log(o(9,2)),console.log(o(2,2))})();
