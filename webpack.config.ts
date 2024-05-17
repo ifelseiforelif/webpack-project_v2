@@ -42,7 +42,7 @@ export default (env: EnvVariables) => {
       extensions: [".tsx", ".ts", ".js"],
     },
     devServer: {
-      port: 5000,
+      port: 5001,
       open: true,
     },
   };
